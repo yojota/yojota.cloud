@@ -8,3 +8,20 @@ My personal site
 1. Create repository with my personal site
 2. Config Git action with FTP
 
+
+## License 🖇️
+
+GNU/GPL.
+
+## Contributor ✒️
+
+* **Jota Perez** - *Adaptación* - [yojota](http://yojota.cloud)
+
+
+### Contacto
+
+* Jota Perez
+* yojota@gmail.com
+* [Twitter](https://twitter.com/yojota)
+* [Linkedin](https://www.linkedin.com/in/juan-francisco-perez-b0759632/)
+* [Sitio Web](http://yojota.com.ar)
