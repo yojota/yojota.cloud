@@ -1,0 +1,6 @@
+web:
+  image: nginx:1.20.1-alpine
+  volumes:
+    - ./public_html:/usr/share/nginx/html:ro
+  ports:
+    - "8080:80"
