@@ -1,128 +1,281 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Solid Template</title>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.css">
-	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
-<body class="is-boxed has-animations">
-    <div class="body-wrap">
-        <header class="site-header">
-            <div class="container">
-                <div class="site-header-inner">
-                    <div class="brand header-brand">
-                        <h1 class="m-0">
-							<a href="#">
-								<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-                            </a>
-                        </h1>
-                    </div>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>SI Capital</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.ico">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="assets/css/slick/slick.css"> 
+        <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/iconfont.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+        <!-- xsslider slider css -->
+
+
+        <!--<link rel="stylesheet" href="assets/css/xsslider.css">-->
+
+
+
+
+        <!--For Plugins external css-->
+        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
                 </div>
             </div>
-        </header>
+        </div><!--End off Preloader -->
 
-        <main>
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-inner">
-						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">Si Capitals</h1>
-	                        <p class="hero-paragraph">INversiones y Créditos</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Whatapps</a><a class="button" href="#">Contacto</a></div>
-						</div>
-						<div class="hero-figure anime-element">
-							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
-								<rect width="528" height="396" style="fill:transparent;" />
-							</svg>
-							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
-							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
-							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
-							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
-							<div class="hero-figure-box hero-figure-box-05"></div>
-							<div class="hero-figure-box hero-figure-box-06"></div>
-							<div class="hero-figure-box hero-figure-box-07"></div>
-							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
-							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
-							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
-						</div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="features section">
-                <div class="container">
-					<div class="features-inner section-inner has-bottom-divider">
-                        <div class="features-wrap">
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-01.svg" alt="Feature 01">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Inversiones</h4>
-                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+        <div class="culmn">
+            <!--Home page style-->
+
+
+            <nav class="navbar navbar-default bootsnav navbar-fixed">
+                <div class="navbar-top bg-grey fix">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="navbar-callus text-left sm-text-center">
+                                    <ul class="list-inline">
+                                        <li><a href=""><i class="fa fa-phone"></i> Llamanos: 0388-4399517</a></li>
+                                        <li><a href=""><i class="fa fa-envelope-o"></i> Contacto: info@sicapital.com.ar</a></li>
+                                    </ul>
                                 </div>
                             </div>
-							<div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-02.svg" alt="Feature 02">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Creditos</h4>
-                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
-                                </div>
-                            </div>
-                            <div class="feature text-center is-revealing">
-                                <div class="feature-inner">
-                                    <div class="feature-icon">
-										<img src="dist/images/feature-icon-03.svg" alt="Feature 03">
-                                    </div>
-                                    <h4 class="feature-title mt-24">Consultoria</h4>
-                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                            <div class="col-md-6">
+                                <div class="navbar-socail text-right sm-text-center">
+                                    <ul class="list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="pricing section">
-                <div class="container-sm">
-                    <div class="pricing-inner section-inner">
-                        <div class="pricing-header text-center">
-                            <h2 class="section-title mt-0">Paquetes de Inversiones</h2>
-                            <p class="section-paragraph mb-0">Nuestras mejores maneras de invertir</p>
-                        </div>
-						<div class="pricing-tables-wrap">
-                            <div class="pricing-table">
-                                <div class="pricing-table-inner is-revealing">
-                                    <div class="pricing-table-main">
-                                        <div class="pricing-table-header pb-24">
-                                            <div class="pricing-table-price"><span class="pricing-table-price-currency h2">$</span><span class="pricing-table-price-amount h1">49</span><span class="text-xs">/month</span></div>
+                <div class="container"> 
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand">
+                            <img src="assets/images/logo.png" class="logo" alt="">
+                            <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">Inicio</a></li>                    
+                            <li><a href="#features">Acerca de Nosotros</a></li>
+                            <li><a href="#business">Servicios</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div> 
+
+            </nav>
+
+            <!--Home Sections-->
+
+            <section id="home" class="home bg-black fix">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home text-center">
+                            <div class="col-md-12">
+                                <div class="hello_slid">
+                                    <div class="slid_item">
+                                        <div class="home_text ">
+                                            <h2 class="text-white"><strong>SI Capital</strong></h2>
+                                            <h1 class="text-white">Créditos</h1>
+                                            <h3 class="text-white">- Para conseguir tus <strong>objetivos</strong> </h3>
                                         </div>
-										<div class="pricing-table-features-title text-xs pt-24 pb-24">Los mejores precios</div>
-                                        <ul class="pricing-table-features list-reset text-xs">
-                                            <li>
-                                                <span>Lorem ipsum dolor sit nisi</span>
-                                            </li>
-                                            <li>
-                                                <span>Lorem ipsum dolor sit nisi</span>
-                                            </li>
-                                            <li>
-                                                <span>Lorem ipsum dolor sit nisi</span>
-                                            </li>
-											<li>
-												<span>Lorem ipsum dolor sit nisi</span>
-											</li>
-                                        </ul>
+
+                                        <div class="home_btns m-top-40">
+                                            <a href="" class="btn btn-primary m-top-20">Contacto</a>
+                                        </div>
+                                    </div><!-- End off slid item -->
+                                    <div class="slid_item">
+                                        <div class="home_text ">
+                                            <h2 class="text-white"><strong>SI Capital</strong></h2>
+                                            <h1 class="text-white">Asesoramiento</h1>
+                                            <h3 class="text-white">- La mejor manera de hacer rendir <strong>el dinero</strong> </h3>
+                                        </div>
+
+                                        <div class="home_btns m-top-40">
+                                            <a href="" class="btn btn-primary m-top-20">Contacto</a>
+                                        </div>
+                                    </div><!-- End off slid item -->
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+
+
+
+            <!--Featured Section-->
+            <section id="features" class="features">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_features fix roomy-70">
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-calculator"></i>
                                     </div>
-                                    <div class="pricing-table-cta mb-8">
-                                        <a class="button button-primary button-shadow button-block" href="#">Contratar</a>
+                                    <div class="f_item_text">
+                                        <h3>Créditos</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-line-chart"></i>
+                                    </div>
+                                    <div class="f_item_text">
+                                        <h3>Asesoramiento</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_icon">
+                                        <i class="fa fa-comments-o"></i>
+                                    </div>
+                                    <div class="f_item_text">
+                                        <h3>Consultorias</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque eleifend
+                                            in sit amet mattis volutpat rhoncus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Featured Section-->
+
+
+
+
+
+            <!--Test section-->
+            <section id="test" class="test bg-grey roomy-60 fix">
+                <div class="container">
+                    <div class="row">                        
+                        <div class="main_test fix">
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="head_title text-center fix">
+                                    <h2 class="text-uppercase">Opniones de nuestros clientes</h2>
+                                    <h5>Empresas y personas que consiguieron sus objetivos con nuestro asesoramiento</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="test_item fix">
+                                    <div class="item_img">
+                                        <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+
+                                    <div class="item_text">
+                                        <h5>Cliente 1</h5>
+                                        <h6>ejemplo.com</h6>
+
+                                        <p>Natus voluptatum enim quod necessitatibus quis
+                                            expedita harum provident eos obcaecati id culpa
+                                            corporis molestias.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="test_item fix sm-m-top-30">
+                                    <div class="item_img">
+                                        <img class="img-circle" src="assets/images/test-img2.jpg" alt="" />
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+
+                                    <div class="item_text">
+                                        <h5>Ejemplo 2</h5>
+                                        <h6>ejemplo2.com</h6>
+
+                                        <p>Natus voluptatum enim quod necessitatibus quis
+                                            expedita harum provident eos obcaecati id culpa
+                                            corporis molestias.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End off test section -->
+
+            <!--Call to  action section-->
+            <section id="action" class="action bg-primary roomy-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="maine_action">
+                            <div class="col-md-8">
+                                <div class="action_item text-center">
+                                    <h2 class="text-white text-uppercase">Envianos un mensaje</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="action_btn text-left sm-text-center">
+                                    <a href="" class="btn btn-default">Whatsapp</a>
                                 </div>
                             </div>
                         </div>
@@ -130,66 +283,96 @@
                 </div>
             </section>
 
-			<section class="cta section">
-				<div class="container">
-					<div class="cta-inner section-inner">
-						<h3 class="section-title mt-0">Que estas esperando?</h3>
-						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="#">contacto</a>
-						</div>
-					</div>
-				</div>
-			</section>
-        </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="site-footer-inner">
-                    <div class="brand footer-brand">
-						<a href="#">
-							<img class="header-logo-image" src="dist/images/logo.svg" alt="Logo">
-						</a>
+
+
+            <footer id="contact" class="footer action-lage bg-black p-top-80">
+                <!--<div class="action-lage"></div>-->
+                <div class="container">
+                    <div class="row">
+                        <div class="widget_area">
+                            <div class="col-md-3">
+                                <div class="widget_item widget_about">
+                                    <h5 class="text-white">About Us</h5>
+                                    <p class="m-top-20">Lorem ipsum dolor sit amet consec tetur adipiscing elit 
+                                        nulla aliquet pretium nisi in cursus 
+                                        maecenas nec eleifen.</p>
+                                    <div class="widget_ab_item m-top-30">
+                                        <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <h6 class="text-white">Dirección</h6>
+                                            <p>
+                                                Argañaraz 295 oficina 6 3er piso</p>
+                                        </div>
+                                    </div>
+                                    <div class="widget_ab_item m-top-30">
+                                        <div class="item_icon"><i class="fa fa-phone"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <h6 class="text-white">Telefono :</h6>
+                                            <p>+54 0388-4399517 </p>
+                                        </div>
+                                    </div>
+                                    <div class="widget_ab_item m-top-30">
+                                        <div class="item_icon"><i class="fa fa-envelope-o"></i></div>
+                                        <div class="widget_ab_item_text">
+                                            <h6 class="text-white">Email:</h6>
+                                            <p>info@sicapital.com.ar</p>
+                                        </div>
+                                    </div>
+                                </div><!-- End off widget item -->
+                            </div><!-- End off col-md-3 -->
+
+                            <div class="col-md-3">
+                                <div class="widget_item widget_newsletter sm-m-top-50">
+                                    <div class="widget_brand m-top-40">
+                                        <a href="" class="text-uppercase">SI Capital</a>
+                                        <p>Lorem ipsum dolor sit amet consec tetur 
+                                            adipiscing elit nulla aliquet pretium nisi in</p>
+                                    </div>
+                                    <ul class="list-inline m-top-20">
+                                        <li>-  <a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+
+                                </div><!-- End off widget item -->
+                            </div><!-- End off col-md-3 -->
+                        </div>
                     </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="#">Sobre Nosotros</a>
-                        </li>
-                    </ul>
-                    <ul class="footer-social-links list-reset">
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Facebook</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Twitter</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="screen-reader-text">Google</span>
-                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#0270D7"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="footer-copyright">&copy; 2021 SI Capitals</div>
                 </div>
-            </div>
-        </footer>
-    </div>
+                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                    <div class="col-md-12 p-top-20">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            SI Capital -  2021. All Rights Reserved
+                        </p>
+                    </div>
 
-    <script src="dist/js/main.min.js"></script>
-</body>
+
+                </div>
+            </footer>
+
+
+
+
+        </div>
+
+        <!-- JS includes -->
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/css/slick/slick.js"></script>
+        <script src="assets/css/slick/slick.min.js"></script>
+        <script src="assets/js/jquery.collapse.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+
+
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
